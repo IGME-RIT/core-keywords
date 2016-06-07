@@ -15,6 +15,7 @@ public:
 	void basicConstExamples();
 	const int constParametersAndConstReturnExample(const int num);
 	void constFunctionExample() const;
+	void constObjectsExample();
 };
 
 class StaticKeyword{
@@ -38,6 +39,7 @@ public:
 	void registerExample();
 };
 
+extern std::string name;
 class ExternKeyword{
 public:
 	void externExample();
@@ -50,10 +52,10 @@ public:
 
 class UnionKeyword{
 public:
-	void volatileExample();
+	void unionExample();
 };
 
 class TypedefKeyword{
 public:
-	void volatileExample();
+	void typedefExample();
 };

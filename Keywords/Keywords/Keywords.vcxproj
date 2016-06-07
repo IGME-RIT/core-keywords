@@ -66,10 +66,13 @@
   <ItemGroup>
     <ClCompile Include="AutoKeyword.cpp" />
     <ClCompile Include="ConstKeyword.cpp" />
+    <ClCompile Include="ExternKeyword.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NamespaceKeyword.cpp" />
     <ClCompile Include="RegisterKeyword.cpp" />
     <ClCompile Include="StaticKeyword.cpp" />
+    <ClCompile Include="TypedefKeyword.cpp" />
+    <ClCompile Include="UnionKeyword.cpp" />
     <ClCompile Include="VolatileKeyword.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -36,6 +36,15 @@
     <ClCompile Include="VolatileKeyword.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TypedefKeyword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnionKeyword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternKeyword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassDeclarations.h">

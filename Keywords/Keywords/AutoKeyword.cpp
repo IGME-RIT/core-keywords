@@ -1,5 +1,6 @@
 #include "ClassDeclarations.h"
 #include <cstdint>
+#include <vector>
 
 void AutoKeyword::autoExample(){
 	//Auto specifier simple tells the compiler to determine the data type at compile time by its initializer
@@ -18,23 +19,29 @@ void AutoKeyword::autoExample(){
 	//printf("%s", num);
 
 	//Also, the above is a simple example, but not the intended use for auto
+
 	//One use is with iterators
-	vector<int> vec1;
-	vector<int>::iterator itr;
+	vector<int> vec;
+	vector<int>::iterator itr1 = vec.begin();
 
 	//Using the Auto Keyword
 	//A simpler way to do the same thing
-	auto itr = vec.iterator;
+	auto itr2 = vec.begin();
 
 	//With Pointers and References
-		//Will automatically turn into a reference or pointer
+		//Will automatically turn into a reference
+			//Examples:
+				//Pointer:		auto foor = &num;
 		//You can explicitly force auto to be a pointer or reference type
 	
 	//Pointer
-	auto* foo;
+	auto* foo = &num;
 	//Reference
-	auto& bar;
-
+	auto& bar = num2;
+	//I cast bar to an int, since there is apperently an issue with cout trying to uderstand uint8_t
+	cout << "\tBar's Value Before Num2 Updated: " << (int)bar << endl;
+	num2++;
+	cout << "\tBar's Value After Num2 Updated: " << (int)bar << endl;
 	//This isn't everything
 		//For the rest, please see the Templates tutorial <- This will be a link
 }

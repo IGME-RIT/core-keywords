@@ -1,6 +1,7 @@
 #include "ClassDeclarations.h"
 
 //I used this site quite a bit for this tutorial: https://msdn.microsoft.com/en-us/library/07x6b05d.aspx
+//I also used: https://msdn.microsoft.com/en-us/library/4h2h0ktk.aspx
 
 //The keyword merely states that the object or variable is not modifiable.
 
@@ -12,6 +13,9 @@
 	//5) const parameters
 	//6) const return types
 	//7) const functions
+	//8) const objects
+
+//Also, shares a close relation with the mutable keyword
 
 //Note: In most cases const makes the thing to the left of it constant example
 		//int const num3 = 5;
@@ -71,6 +75,7 @@ const int ConstKeyword::constParametersAndConstReturnExample(const int num){
 		//This means that it is unmodifiable and that when using the function it requires a const passed in or else it won't work
 
 	cantBeChanged = num;
+	canBeChanged = num + 2;
 	cout << "\t" << num << endl;
 	cantBeChanged++;
 
@@ -88,9 +93,42 @@ void ConstKeyword::constFunctionExample() const{
 	//Shows that I can access this
 	cout << "\t" << cantBeChanged << endl;
 	//But I can't edit it
+		//Uncommment it below and see what happens
 	//cantBeChanged = 5;
 
 	//Uncomment and try to use this function
 		//it won't work, since the function isn't const
 	//constParametersAndConstReturnExample(5);
+
+	//Mutable
+	//Definition from MSDN:
+		//This keyword can only be applied to non-static and non-const data members of a class.	//data member - variable in a class
+		//If a data member is declared mutable, then it is legal to assign a value to this data member from a const member function.
+	//Pretty simple concept and use
+	cout << "\tcanBeChanged Before Increment: " << canBeChanged << endl;
+	canBeChanged++;
+	cout <<  "\tcanBeChanged After Increment: " << canBeChanged << endl;
+}
+
+struct nums1{
+	int n1, n2;
+};
+
+struct nums2{
+	int n1;
+	mutable int n2;
+};
+
+//Use 8 (const objects)
+void ConstKeyword::constObjectsExample(){
+	const nums1 n1 = { 0, 1 };
+	//can't edit any of the struct's data members
+	//n1.n1++;	//uncomment and try
+
+	const nums2 n2 = { 0, 1 };
+	cout << "\tn2 Before: " << n2.n2 << endl;
+	//can't edit n1, but you can edit n2
+	//n2.n1++;	//uncomment and try
+	n2.n2++;
+	cout << "\tn2 After: " << n2.n2 << endl;
 }
