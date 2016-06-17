@@ -1,0 +1,28 @@
+title: C/C++ Keywords
+author:
+  name: Sean Connolly
+  email:
+  github: maegico
+description: A basic tutorial about various important keywords in C/C++.
+language: C++
+image:
+  icon: https://cloud.githubusercontent.com/assets/10502938/13506660/28be0300-e14d-11e5-90e3-b194f14e52bd.PNG
+  banner: https://cloud.githubusercontent.com/assets/10502938/13506660/28be0300-e14d-11e5-90e3-b194f14e52bd.PNG
+tags:
+  - C++
+  - Core
+extra_resources:
+  - "https://msdn.microsoft.com/en-us/library/07x6b05d.aspx"
+  - "https://msdn.microsoft.com/en-us/library/4h2h0ktk.aspx"
+  - "http://stackoverflow.com/questions/10422034/when-to-use-extern-in-c"
+  - "http://www.cplusplus.com/forum/general/21368/"
+  - "https://msdn.microsoft.com/en-us/library/5cb46ksf.aspx"
+  - "http://www.cprogramming.com/tutorial/statickeyword.html"
+  - "http://stackoverflow.com/questions/572547/what-does-static-mean-in-a-c-program"
+  - "http://www.cplusplus.com/doc/tutorial/other_data_types/"
+  - "https://msdn.microsoft.com/en-us/library/5dxy4b7b.aspx"
+  - "http://stackoverflow.com/questions/4437527/why-do-we-use-volatile-keyword-in-c"
+  - "http://www.barrgroup.com/Embedded-Systems/How-To/C-Volatile-Keyword"
+  - "https://msdn.microsoft.com/en-us/library/12a04hfd.aspx"
+  - "http://stackoverflow.com/questions/2484980/why-is-volatile-not-considered-useful-in-multithreaded-c-or-c-programming"
+connections:

@@ -4,6 +4,7 @@
 	//http://stackoverflow.com/questions/4437527/why-do-we-use-volatile-keyword-in-c
 	//http://www.barrgroup.com/Embedded-Systems/How-To/C-Volatile-Keyword
 	//https://msdn.microsoft.com/en-us/library/12a04hfd.aspx
+	//http://stackoverflow.com/questions/2484980/why-is-volatile-not-considered-useful-in-multithreaded-c-or-c-programming
 
 //Volatile is a suggestion to the compiler to not optimize certain parts of code
 //This is important for Embedded Systems

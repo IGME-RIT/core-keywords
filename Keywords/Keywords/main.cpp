@@ -17,7 +17,7 @@ General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *	This tutorial deals with various important keywords in C/C++.
-*
+*	
 *	
 *
 */
@@ -31,11 +31,11 @@ List O' Keywords
 *	mutable		x
 *	namespace	x
 *	auto		?
-*	union
+*	union		x
 *	typedef		x
 *	register	x
-*	volatile
-*	extern
+*	volatile	x
+*	extern		x
 */
 
 #include "ClassDeclarations.h"
