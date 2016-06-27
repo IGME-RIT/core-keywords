@@ -82,7 +82,7 @@ void UnionKeyword::unionExample(){
 		//put it in a struct with an enum
 	data d = {
 		DataType::FloatingPoint,
-		{3.2}
+		{3.2f}
 	};
 	
 	//This shows how we would access the fnum from the union

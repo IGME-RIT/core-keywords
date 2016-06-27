@@ -4,9 +4,6 @@
 
 using namespace std;
 
-static void hiddenFunction();
-//int hiddenFunc();
-
 class ConstKeyword{
 public:
 	int cantBeChanged;
@@ -21,6 +18,7 @@ public:
 class StaticKeyword{
 public:
 	static int number;
+	static void staticMemberFunction();
 	void staticVarInFunction();
 };
 

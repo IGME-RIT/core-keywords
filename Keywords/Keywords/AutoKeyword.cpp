@@ -2,10 +2,13 @@
 #include <cstdint>
 #include <vector>
 
-void AutoKeyword::autoExample(){
-	//Auto specifier simple tells the compiler to determine the data type at compile time by its initializer
-		//An initializer is the value that you initialize the variable with
+//Auto specifier simple tells the compiler to determine the data type at compile time by its initializer
+	//An initializer is the value that you initialize the variable with
 
+//The Auto keyword is one of four storage classes in c++
+	//static, extern, register, auto
+
+void AutoKeyword::autoExample(){
 	//Simple example
 	//This can be very powerful and useful for longer named and more complex data types,
 		//but it may not give you what you want and may not choose the best option

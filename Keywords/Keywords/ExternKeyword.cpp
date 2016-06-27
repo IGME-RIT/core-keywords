@@ -9,6 +9,9 @@
 	//This allows me to put it in the header and then declare and define it inside another file
 		//and still use it in any file that includes the header
 
+//The Extern keyword is one of four storage classes in c++
+	//static, extern, register, auto
+
 //Look in ClassDeclarations.h next to the ExternKeyword class you will see extern std::string name;
 	//This is the extern variable we will be using to show off the extern keyword
 

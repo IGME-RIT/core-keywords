@@ -3,6 +3,8 @@
 //Register is nothing more than a suggestion to the compiler to keep the variable in a processor register instead of in RAM
 	//A register is the fastest form of memory.
 	//It is on the CPU and it is where the Processor stores data that it is currently using.
+	//The Register keyword is one of four storage classes in c++
+		//static, extern, register, auto
 //Some compilers already pick and choose variables to keep in register
 //Thus, Some compilers will completely ignore the register keyword
 	//Visual Studio ignores this keyword

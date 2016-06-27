@@ -17,7 +17,7 @@ General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *	This tutorial deals with various important keywords in C/C++.
-*	
+*
 *	
 *
 */
@@ -26,29 +26,32 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
 List O' Keywords
-*	const		x
-*	static		x
-*	mutable		x
-*	namespace	x
-*	auto		?
-*	union		x
-*	typedef		x
-*	register	x
-*	volatile	x
-*	extern		x
+*	const
+*	static
+*	mutable
+*	namespace
+*	auto
+*	union
+*	typedef
+*	register
+*	volatile
+*	extern
 */
 
 #include "ClassDeclarations.h"
+
+//A hidden function
+void hiddenFunction(){ printf("\tWatty~!\n"); }
 
 int main(){
 #pragma region Static Examples
 	cout << "Static Examples:" << endl;
 	printf("\tStatic Variable without an Instance of the StaticKeyword Class: %d\n", StaticKeyword::number);
 
-	StaticKeyword staticExample;
+	//Notice how this static member function can be called even before an instance of the class has been created
+	StaticKeyword::staticMemberFunction();
 
-	//The hidden function that can't be seen by other files
-	//hiddenFunc();
+	StaticKeyword staticExample;
 
 	cout << "\t";
 
