@@ -31,6 +31,8 @@ void VolatileKeyword::volatileExample(){
 	}
 	//volatile will make sure that the compiler doesn't optimize away check2 and all things dealing with it will remain the same
 
-	//This also has some uses in multithreading, which will be talked about in the multithreading example:
-		//https://github.com/IGME-RIT/core-multithreading
+	//This also had some uses in multithreading, but volatile will usually be found in older code
+		//This comes up with dealing the CPU and compiler memory reordering which will be covered in later multithreading examples
+		//To get started learning multithreading:
+			//https://github.com/IGME-RIT/core-multithreading
 }
